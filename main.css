@@ -499,7 +499,7 @@ h6 {
   }
 
   .footer .footer-contact .social-links {
-    margin-left: 0;
+    margin-left: 0px;
   }
 
   .footer p{
@@ -507,11 +507,11 @@ h6 {
   }
 
   .footer .logo img {
-    width: 100px; /* Ajusta el tamaño del logo */
+    width: 110px; /* Ajusta el tamaño del logo */
   }
 
   .footer .footer-contact .address p {
-    max-width: 250px; /* Permite que el texto ocupe todo el ancho disponible */
+    max-width: 500px; /* Permite que el texto ocupe todo el ancho disponible */
   }
 }
 
@@ -655,8 +655,6 @@ h6 {
 .sitename-logo {
   width: 150px; /* Ajusta el tamaño del logo según sea necesario */
   height: auto;
-
-  margin-right: 80px;
 }
 
 /* Styles for the footer contact */
@@ -2790,10 +2788,6 @@ body, html {
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
