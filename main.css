@@ -475,6 +475,47 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .footer .container {
+    padding: 20px;
+  }
+
+  .footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .footer-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .footer .footer-contact .address,
+  .footer .footer-contact .contact-details {
+    align-items: center;
+  }
+
+  .footer .footer-contact .social-links {
+    margin-left: 0;
+  }
+
+  .footer p{
+    font-size: 9px;
+  }
+
+  .footer .logo img {
+    width: 110px; /* Ajusta el tamaño del logo */
+  }
+
+  .footer .footer-contact .address p {
+    max-width: 250px; /* Permite que el texto ocupe todo el ancho disponible */
+  }
+}
+
+
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
