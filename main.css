@@ -476,7 +476,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .footer .container {
     padding: 20px;
   }
@@ -507,7 +507,7 @@ h6 {
   }
 
   .footer .logo img {
-    width: 110px; /* Ajusta el tamaño del logo */
+    width: 100px; /* Ajusta el tamaño del logo */
   }
 
   .footer .footer-contact .address p {
