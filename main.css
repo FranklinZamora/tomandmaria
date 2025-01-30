@@ -507,26 +507,13 @@ h6 {
   }
 
   .footer .logo img {
-    width: 90px; /* Ajusta el tamaño del logo */
+    width: 150px; /* Ajusta el tamaño del logo */
   }
 
   .footer .footer-contact .address p {
     max-width: 500px; /* Permite que el texto ocupe todo el ancho disponible */
   }
 
-  .sitename-logo {
-    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
-    height: auto;
-  
-    margin-right: 20px;
-  }
-
-  .sitename-logoFooter {
-    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
-    height: auto;
-  
-    margin-right: 20px;
-  }
 }
 .sitename-logoFooter {
   width: 250px; /* Ajusta el tamaño del logo según sea necesario */
