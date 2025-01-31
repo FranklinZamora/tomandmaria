@@ -38,3 +38,40 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const consentCheckbox = document.getElementById('consent');
+  const submitBtn = document.getElementById('submit-btn');
+  const modal = document.getElementById('subscriptionModal');
+  const span = modal.getElementsByClassName('close')[0];
+
+  function validateForm() {
+    if (nameInput.value && emailInput.value && consentCheckbox.checked) {
+      submitBtn.disabled = false;
+    } else {
+      submitBtn.disabled = true;
+    }
+  }
+
+  nameInput.addEventListener('input', validateForm);
+  emailInput.addEventListener('input', validateForm);
+  consentCheckbox.addEventListener('change', validateForm);
+
+  document.getElementById('newsletter-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    modal.style.display = 'block';
+  });
+
+  span.onclick = function() {
+    modal.style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+});

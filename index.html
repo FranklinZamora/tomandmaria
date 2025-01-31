@@ -125,7 +125,7 @@
 
           <div class="col-lg-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
             <div class="content">
-              <h3>Why choose us?.</h3>
+              <h3>Why choose us?</h3>
               <p>We handle your project from start to finish with a focus on quality and safety. Our team works with you to create detailed plans, reviewed by a certified engineer. We document every step in logbooks, ensuring transparency and real-time progress tracking. With careful planning and professional oversight, we deliver your project with precision and excellence.</p>
               </div>
           </div>
@@ -159,6 +159,30 @@
       </div>
 
     </section><!-- /Get Started Section -->
+
+
+<!-- Spring Cleanup -->
+<section id="spring-cleanup" class="spring-cleanup">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <img src="assets/spring_cleanup.png" class="img-fluid spring-cleanup-img" alt="Spring Cleanup">
+      </div>
+      <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center align-items-center text-center">
+        <h2>Spring Cleanup</h2>
+        <p>
+          Aeration, power rake, trimming, mowing and fertilize.<br>
+          Overseeding and flowerbeds available upon request.<br>
+          <strong>Regular lot:</strong> $149<br>
+          <strong>Corner or pie lot:</strong> $189
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPBfsYQ7AORqdPPfS21BYfnVLgBSZYVzeprWEVCv7gZaSxOg/closedform" class="btn btn-primary mt-3" target="_blank">Book your 2025 <strong>Spring Cleanup</strong> </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Spring Cleanup -->
+
 
 <!-- Services Section -->
 <section id="services" class="services section light-background">
@@ -874,10 +898,39 @@
 
     </section><!-- /Testimonials Section -->
 
-    <div class="container text-center mt-4">
-      <h4>Connect With Us</h4>
-      <a href="mailto:info@tomandmaria.ca" class="btn btn-primary">Contact Us</a>
+
+
+    <section id="newsletter" class="newsletter-section">
+      <div class="container">
+        <h4>Subscribe to our Newsletter</h4>
+        <form id="newsletter-form" class="d-flex flex-column align-items-center">
+          <div class="mb-3 w-100">
+            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3 w-100">
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" id="consent" class="form-check-input" required>
+            <label for="consent" class="form-check-label">I accept the sending of commercial communications and/or Newsletters</label>
+          </div>
+          <div class="d-flex justify-content-between w-100">
+            <button type="submit" id="submit-btn" class="btn btn-subscribe" disabled>Subscribe</button>
+            <a href="mailto:info@tomandmaria.ca" class="btn btn-contact">Contact Us</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <!-- Modal -->
+    <div id="subscriptionModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h5>Cooming Soon</h5>
+        <p>Please contact us</p>
+      </div>
     </div>
+    <!-- /Newsletter Section -->
 
   </main>
 
@@ -885,7 +938,7 @@
     <div class="container footer-top">
       <div class="row gy-4 align-items-center justify-content-center">
         <div class="col-lg-12 d-flex align-items-center justify-content-between">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="#" class="logo d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#comingSoonModalFooter">
             <img class="sitename-logoFooter" src="assets/img/LOGO/FON.png" alt="Site Name Logo">
           </a>
           <div class="footer-contact d-flex flex-row ms-3">
@@ -893,16 +946,24 @@
               <p>Proudly owned by Fifty One North Corp</p>
               <p>Calgary, Alberta Canada</p>
               <p>Design by: <a href="https://www.linkedin.com/in/franklinzamora/" target="_blank">Franklin Zamora</a></p>
-        
             </div>
             <div class="contact-details ms-4">
               <!-- Aquí puedes agregar más detalles de contacto si es necesario -->
             </div>
           </div>
+          <div class="social-buttons ms-4">
+            <a href="https://www.facebook.com/share/1BSNRK5P5w/?mibextid=wwXIfr" target="_blank" class="btn btn-social btn-facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/tom.and.maria?igsh=MWx3cDV0bzF4b242aQ==" target="_blank" class="btn btn-social btn-instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+  
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -919,8 +980,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-  <!-- Main JS File -->
+   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
