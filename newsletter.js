@@ -36,7 +36,8 @@ consentCheckbox.addEventListener("change", function () {
       console.log("Response:", result); // Depuración: Verifica la respuesta del servidor
 
       // Verificar si la respuesta es exitosa y el estado es "active"
-      if (response.ok && result.status === "active") {
+      if (response.ok && result.data && result.data.status === "active") {
+        console.log("Mostrando alerta de éxito"); // Depuración
         Swal.fire({
           title: "Subscription Successful",
           text: "Thank you for subscribing to our newsletter! We will keep you updated with the latest news.",
@@ -52,7 +53,7 @@ consentCheckbox.addEventListener("change", function () {
         form.reset();
         submitButton.disabled = true;
       } else {
-        // Manejar errores de la API
+        console.log("Mostrando alerta de error de la API"); // Depuración
         Swal.fire({
           title: "Error",
           text: result.message || "An error occurred while subscribing. Please try again later.",
@@ -68,6 +69,7 @@ consentCheckbox.addEventListener("change", function () {
       }
     } catch (error) {
       console.error("Error:", error); // Depuración: Verifica el error
+      console.log("Mostrando alerta de error inesperado"); // Depuración
       Swal.fire({
         title: "Error",
         text: "An unexpected error occurred. Please try again.",
