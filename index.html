@@ -900,38 +900,37 @@
 
 
 
-    <section id="newsletter" class="newsletter-section">
-      <div class="container">
-        <h4>Subscribe to our Newsletter</h4>
-        <form id="newsletter-form" class="d-flex flex-column align-items-center">
-          <div class="mb-3 w-100">
-            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-          </div>
-          <div class="mb-3 w-100">
-            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-          </div>
-          <div class="form-check mb-3">
-            <input type="checkbox" id="consent" class="form-check-input" required>
-            <label for="consent" class="form-check-label">I accept the sending of commercial communications and/or Newsletters</label>
-          </div>
-          <div class="d-flex justify-content-between w-100">
-            <button type="submit" id="submit-btn" class="btn btn-subscribe" disabled>Subscribe</button>
-            <a href="mailto:info@tomandmaria.ca" class="btn btn-contact">Contact Us</a>
-          </div>
-        </form>
+<!-- Newsletter Section -->
+<section id="newsletter" class="newsletter-section">
+  <div class="container">
+    <h4>Subscribe to our Newsletter</h4>
+    <form id="newsletter-form" class="d-flex flex-column align-items-center">
+      <div class="mb-3 w-100">
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
       </div>
-    </section>
-    
-    
-    <!-- Modal -->
-    <div id="subscriptionModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h5>Cooming Soon</h5>
-        <p>Please contact us</p>
+      <div class="mb-3 w-100">
+        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
       </div>
-    </div>
-    <!-- /Newsletter Section -->
+      <div class="form-check mb-3">
+        <input type="checkbox" id="consent" class="form-check-input" required>
+        <label for="consent" class="form-check-label">I accept the sending of commercial communications and/or Newsletters</label>
+      </div>
+      <div class="d-flex justify-content-between w-100">
+        <button type="submit" id="submit-btn" class="btn btn-subscribe" disabled>Subscribe</button>
+        <a href="mailto:info@tomandmaria.ca" class="btn btn-contact">Contact Us</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="subscriptionModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h5 id="modal-title">Subscription Status</h5>
+    <p id="modal-message">Please wait...</p>
+  </div>
+</div>
 
   </main>
 
